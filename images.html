@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata, FontAwesome icons, and internal CSS for styling the image slider -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty One - Images</title>
+    <script src="https://kit.fontawesome.com/b5f4641468.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Center alignment for the content section */
+        .content-section {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 70%;
+        }
+
+        /* Styling for the slider container */
+        .slider-container {
+            position: relative;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        /* Images in the slider */
+        .images {
+            width: 100%;
+        }
+
+        /* Initially hide all slides */
+        .figure {
+            display: none;
+        }
+
+        /* Display the currently active slide */
+        .active {
+            display: block;
+        }
+
+        /* Styling for navigation arrows */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(27, 27, 27, 0.5);
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            width: 6%;
+            text-align: center;
+        }
+
+        /* Change background color on hover for arrows */
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Positioning for the left arrow */
+        .left-arrow {
+            left: -40px;
+        }
+
+        /* Positioning for the right arrow */
+        .right-arrow {
+            right: -40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header containing navigation and search bar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="modern.html">Treaty today</a></li>
+                <li><a href="images.html">Images</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section for the image slider -->
+        <section class="content-section">
+            <!-- Title of the section -->
+            <h1>Images of Treaty One</h1>
+
+            <!-- Image slider container -->
+            <div class="slider-container">
+                <!-- Individual slide with image and caption -->
+                <figure class="figure active">
+                    <img class="images" src="images/flag.jpg" alt="Treaty One flag image">
+                    <figcaption><em>Treaty One Flag image via <a href="https://www.rrc.ca/indigenous/2023/08/03/anniversary-of-treaty-one-signing/" target="_blank">Red River Collegiate</a></em></figcaption>
+                </figure>
+                <figure class="figure">
+                    <img class="images" src="images/negotiation-2.webp" alt="Drawing of Treaty One being negotiated">
+                    <figcaption><em>Treaty One negotiation image via <a href="https://activehistory.ca/blog/2021/08/09/the-sesquicentennial-of-treaty-1/" target="_blank">Active History</a></em></figcaption>
+                </figure>
+                <figure class="figure">
+                    <img class="images" src="images/coin.jpg" alt="Picture of Treaty One medal">
+                    <figcaption><em>Treaty One medal image via <a href="https://honourthetreaties.ca/home-two/learn-more/" target="_blank">Share the Gifts - Honour the Treaties</a></em></figcaption>
+                </figure>
+
+                <!-- Navigation arrows -->
+                <div class="arrow left-arrow" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+                <div class="arrow right-arrow" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for image slider functionality -->
+    <script>
+        // Variable to track the current slide
+        let currentSlide = 0;
+        // Select all figure elements (slides)
+        const figures = document.querySelectorAll('.figure');
+
+        /**
+         * Function to change the slide
+         * @param {number} direction - The direction to move (1 for next, -1 for previous)
+         */
+        function changeSlide(direction) {
+            // Hide the current slide
+            figures[currentSlide].classList.remove('active');
+            // Update the current slide index
+            currentSlide = (currentSlide + direction + figures.length) % figures.length;
+            // Show the new slide
+            figures[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/*
+I chose an monochromatic color scheme and monochromatic colour family of Green. I chose green because it was the best
+way to connect with the theme of the website and make an easily readable and appeasing colour design.
+Green is a common way to represent the colours of earth and the land, a valuable concept in indigenous culture
+so using green represented that. It's also a colour on the treaty one flag, the treaty my website is on, so it
+again connects with the theme. It also maintains the modern look I was going for and doesn't seem out of place.
+The shades of green offer good contrast with the white background as well.
+
+*/
+
+/* Global styles */
+* {
+    font-family: 'Arial', sans-serif; /* Sets a clean, default font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures consistent box sizing */
+}
+
+/* Highlighted text selection color */
+::selection {
+    background: #acc8fd; /* Light blue background for selected text */
+}
+
+/* Body styling including background and layout */
+body {
+    background-color: #fafafa; /* Light background for a clean design */
+    background-size: cover; /* Ensures background covers entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents background from repeating */
+    background-attachment: fixed; /* Fixes the background during scrolling */
+
+    display: flex; /* Flexbox layout for vertical alignment */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: space-between; /* Space between child elements */
+}
+
+/* Navbar styling */
+nav {
+    background-color: #487b06; /* Dark green for navbar */
+    padding: 2em; /* Adds spacing inside the navbar */
+    display: flex; /* Flexbox layout for items */
+    justify-content: space-between; /* Aligns items to the edges */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays links in a row */
+    gap: 20px; /* Spacing between links */
+}
+
+/* Individual navigation links */
+.nav-links a {
+    color: white; /* White text for readability */
+    font-size: 18px; /* Sets readable font size */
+    text-decoration: none; /* Removes underline */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Content section styling */
+.content-section {
+    width: 100%; /* Occupies full width */
+    padding-left: 50px; /* Padding inside the section */
+    margin-right: 100px; /* Right margin for spacing */
+    margin-left: 40px; /* Left margin for alignment */
+    margin-bottom: 20px; /* Bottom margin for separation */
+    padding: 30px; /* Adds inner spacing */
+    background-color: #ffffff; /* White background for clarity */
+    border-radius: 5px; /* Rounded corners for visual appeal */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Main headings */
+h1, h2 {
+    padding-bottom: 20px; /* Adds padding below headings */
+    border-bottom: 2px solid #575757; /* Grey border for emphasis */
+}
+
+h1 {
+    margin-top: 40px; /* Margin above the heading */
+    color: #285500; /* Dark Orange color for thematic relevance */
+    font-size: 50px; /* Set font size */
+    margin-bottom: 20px; /* Set space below */
+}
+
+/* Paragraphs inside content sections */
+.content-section p {
+    font-size: 15px; /* Readable font size */
+    line-height: 1.5; /* Increases spacing between lines */
+    margin-bottom: 20px; /* Adds spacing between paragraphs */
+}
+
+/* Styling for lists */
+.content-section ul {
+    font-size: 15px; /* Sets font size for list items */
+}
+
+/* Individual list items */
+.content-section ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+}
+
+/* Search container */
+.search-container {
+    position: relative; /* Allows positioning of child elements */
+}
+
+/* Search input field */
+.search-container input {
+    padding: 5px; /* Adds padding inside the input field */
+    border: none; /* Removes border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #2e5100; /* Dark green background */
+    color: rgb(255, 255, 255); /* White text for readability */
+}
+
+/* Search button */
+.search-container button {
+    position: absolute; /* Positioned relative to container */
+    right: 0; /* Aligns button to the right */
+    padding: 5px 10px; /* Adds padding inside the button */
+    border: none; /* Removes border */
+    background-color: #1e3401; /* Darker green for contrast */
+    color: white; /* White text for readability */
+    border-radius: 0 8px 8px 0; /* Rounded corners on one side */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+
+/* Hover effect and color for links */
+a {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #063FA7; /* Blue text color */
+}
+
+/* Styling for generic paragraphs */
+p {
+    margin-top: 10px; /* Adds top margin for spacing */
+}
+
+/* Styling for specific class .topic */
+.topic {
+    margin-top: 30px; /* Adds top margin for spacing */
+}
+
+
+
+/* Sidebar styling */
+aside {
+    width: 100%; /* Full width sidebar */
+    margin-right: 20px; /* Right margin for spacing */
+}
+
+/* Main layout */
+main {
+    display: flex; /* Flexbox layout for main content */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding for spacing */
+    flex: 1; /* Flex item growth */
+}
+
+/* Span text styling */
+span {
+    font-weight: bold; /* Bold text */
+    color: #285500; /* Green text for emphasis */
+}
+
+/* Flex layout for image grids */
+.image-grid {
+    display: flex; /* Flexbox for images */
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Space between images */
+}
+
+/* Placeholder text color */
+::placeholder {
+    color: white; /* White text color */
+}
+
+/* Styling for figures */
+figure {
+    margin-right: 10px; /* Adds right margin */
+}
+
+/* Image styling */
+img {
+    width: 100%; /* Full width images */
+}

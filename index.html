@@ -1,0 +1,133 @@
+<!--
+Name: Muhammad Huzaifa
+Course: Web Dev 20s
+Teacher: Ms Hoitink
+School: Pembina Trails Collegiate
+Date Last Modified: 2024-11-18
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and FontAwesome icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty One</title>
+    <script src="https://kit.fontawesome.com/b5f4641468.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Grid layout for two maps side by side */
+        #two-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* Centering images and captions */
+        #two-images figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Full width images */
+        #two-images img {
+            width: 100%;
+        }
+
+        /* Center text for figcaptions */
+        #two-images figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
+        #communities{
+            margin-left: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Header with navigation and search bar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="modern.html">Treaty today</a></li>
+                <li><a href="images.html">Images</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Section has a class because this same css design will be used for other web pages -->
+        <section class="content-section">
+            <!-- Description -->
+            <h1>Treaty One</h1>
+            <p>
+                Treaty No. 1, also known as the "Stone Fort Treaty," was signed at Lower Fort Garry on August 3, 1871, between the Canadian Crown and seven First Nations. The treaty granted European settlers access to Indigenous lands for agriculture and industrial development, while protecting certain Indigenous rights and dividing the land.
+                <br>
+                <p>Source via <a class="colored" href="https://en.wikipedia.org/wiki/Treaty_1">Wikipedia</a></p>
+            </p>
+
+            <!-- Communities involved section -->
+            <h2>Communities Involved</h2>
+            <p>
+                The Treaty involved several First Nations including: 
+            </p>
+            <ul id="communities">
+                <li><span>Brokenhead Ojibway Nation</span> - Anishinaabe (Saulteaux/Ojibwa) nation</li>
+                <li><span>Long Plain First Nation</span> - Ojibwa and Dakota nations</li>
+                <li><span>Peguis First Nation</span> - Cree and Ojibwa nations</li>
+                <li><span>Roseau River Anishinabe First Nation</span> - Ojibwa nation</li>
+                <li><span>Sandy Bay Ojibway Nation</span> - Ojibwa nation</li>
+                <li><span>Swan Lake First Nation</span> - Anishinaabe (Saulteaux/Ojibwa) nation</li>
+                <li><span>Sagkeeng First Nation</span> - Anicinabe Nation (Primarily Ojibwa)</li>
+            </ul>
+            <p>Source via <a class="colored" href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html">Government of Canada</a></p>
+
+
+            <div class="topic">
+                <!-- Differences from other treaties  -->
+                <h2>Differences from Other Treaties</h2>
+                <p>
+                    Treaty One is unique in its timing as the first of the numbered treaties, setting a precedent for negotiations between the Crown and Indigenous peoples. Unlike later treaties, it was negotiated during a period of intense settlement and development in the Canadian west.
+                </p>
+                <p>Source via <a class="colored" href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549">Government of Canada</a></p>
+            </div>
+        </section>
+
+        <!-- Image grid with maps-->
+        <aside>
+            <div class="image-grid">
+                <figure class="image-section">
+                    <img src="images/canada.png" class="map" alt="Map of treaties in Canada with a circle over the area of Treaty One">
+                    <figcaption><em>Canafian treaties map via <a href="https://www.timetoast.com/timelines/canada-treaty-timeline" target="_blank">Timetoast Timeline</a></em></figcaption>
+                </figure>
+    
+                <!-- Two maps in same grid line -->
+                <figure id="two-images">
+                    <img src="images/manitoba.webp" alt="Manitoba Treaty One close up image">
+                    <img src="images/close-up.jpg" alt="A more close up image of Treaty One depicting the area in more depth">
+                    <figcaption><em>Map of treaties in and around Manitoba via <a href="https://www.seankheraj.com/lake-winnipeg-treaty-number-five-135th-anniversary/">Sean Kharaj: Canadian History and Environment</a></em></figcaption>
+                    <figcaption><em>Close up map of Treaty One and Treaty Two via <a href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/">Canadian Geographic</a></em></figcaption>
+                </figure>
+            </div>
+        </aside>
+    </main>
+
+
+</body>
+</html>
