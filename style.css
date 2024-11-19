@@ -16,11 +16,6 @@ The shades of green offer good contrast with the white background as well.
     box-sizing: border-box; /* Ensures consistent box sizing */
 }
 
-/* Highlighted text selection color */
-::selection {
-    background: #acc8fd; /* Light blue background for selected text */
-}
-
 /* Body styling including background and layout */
 body {
     background-color: #fafafa; /* Light background for a clean design */
