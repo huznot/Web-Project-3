@@ -187,3 +187,9 @@ figure {
 img {
     width: 100%; /* Full width images */
 }
+/* Search highlight */
+.highlight {
+    background-color: yellow; /* Sets background color to yellow */
+    color: black; /* Sets text color to blakc */
+    font-weight: bold; /* And makes the text bold to stand out */
+}
